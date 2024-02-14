@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://b26ga73dsbhkh"]
+
+[ext_resource type="Script" path="res://daoli.gd" id="1_jnf65"]
+[ext_resource type="Texture2D" uid="uid://boistomwq6kp5" path="res://img/炫狗.png" id="1_v1ru0"]
+[ext_resource type="Texture2D" uid="uid://d1sa55rq18dfd" path="res://img/道理.png" id="1_v8hxd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t4syl"]
+radius = 96.148
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hwwdu"]
+radius = 33.0
+height = 166.0
+
+[node name="DaoliShoot" type="Node2D"]
+
+[node name="last炫" type="CharacterBody2D" parent="."]
+position = Vector2(1827, 75)
+scale = Vector2(0.75, 0.75)
+
+[node name="炫狗" type="Sprite2D" parent="last炫"]
+position = Vector2(-1.33325, 5.33337)
+texture = ExtResource("1_v1ru0")
+
+[node name="Button" type="Button" parent="last炫/炫狗"]
+offset_left = -93.0
+offset_top = -84.0
+offset_right = 91.0
+offset_bottom = 85.0
+flat = true
+
+[node name="CollisionShape炫狗" type="CollisionShape2D" parent="last炫"]
+shape = SubResource("CircleShape2D_t4syl")
+
+[node name="daoli" type="CharacterBody2D" parent="."]
+script = ExtResource("1_jnf65")
+
+[node name="Sddl" type="Sprite2D" parent="daoli"]
+position = Vector2(137.4, 133)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_v8hxd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="daoli"]
+position = Vector2(139.4, 189)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_hwwdu")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[connection signal="pressed" from="last炫/炫狗/Button" to="daoli" method="_on_炫狗_pressed"]

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bd1eetahfh8dv"]
+
+[node name="Playground" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.880973, 0.473166, 0, -0.473166, -0.880973, 0, 44.1739, -54.3194)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.99663, 0, -0.0820256, 0, 1, 0, 0.0820256, 0, -0.99663, 0, 13.7655, -11.3968)
