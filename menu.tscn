@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://dek7xmc8h6wh"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_qshfu"]
+[ext_resource type="Script" path="res://script/menu.gd" id="1_qshfu"]
 [ext_resource type="AudioStream" uid="uid://dcjspqlt6yv84" path="res://audio/longToken/冲刺.mp3" id="2_djlyi"]
 [ext_resource type="FontFile" uid="uid://lgnbkdwffilh" path="res://assets/fonts/HYYuanLongHei75W.ttf" id="2_v37kh"]
 [ext_resource type="AudioStream" uid="uid://kj43tpabenvh" path="res://audio/music/Ccvbn -（完）电棍：波西唢呐狂想曲.mp3" id="3_kq8rf"]
@@ -17,11 +17,11 @@ script = ExtResource("1_qshfu")
 [node name="冲刺" type="Label" parent="main"]
 offset_left = 1164.0
 offset_top = 208.0
-offset_right = 1356.0
+offset_right = 1548.0
 offset_bottom = 333.0
 theme_override_fonts/font = ExtResource("2_v37kh")
 theme_override_font_sizes/font_size = 96
-text = "冲刺"
+text = "单寄游戏"
 
 [node name="冲刺Button" type="Button" parent="main/冲刺"]
 layout_mode = 1
@@ -30,10 +30,32 @@ anchor_left = 0.338
 anchor_top = 0.398
 anchor_right = 0.338
 anchor_bottom = 0.398
-offset_left = -77.896
-offset_top = -49.75
-offset_right = 132.104
-offset_bottom = 78.25
+offset_left = -133.792
+offset_top = -43.75
+offset_right = 263.208
+offset_bottom = 68.25
+flat = true
+
+[node name="联机" type="Label" parent="main"]
+offset_left = 1172.0
+offset_top = 343.0
+offset_right = 1556.0
+offset_bottom = 468.0
+theme_override_fonts/font = ExtResource("2_v37kh")
+theme_override_font_sizes/font_size = 96
+text = "连寄游戏"
+
+[node name="联机Button" type="Button" parent="main/联机"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.338
+anchor_top = 0.398
+anchor_right = 0.338
+anchor_bottom = 0.398
+offset_left = -135.792
+offset_top = -43.75
+offset_right = 261.208
+offset_bottom = 71.25
 flat = true
 
 [node name="冲刺sound" type="AudioStreamPlayer2D" parent="main"]
@@ -74,23 +96,65 @@ theme_override_fonts/font = ExtResource("2_v37kh")
 theme_override_font_sizes/font_size = 128
 text = "道理Go"
 
-[node name="道理" type="Label" parent="."]
-offset_left = 1172.0
-offset_top = 543.0
-offset_right = 1364.0
-offset_bottom = 668.0
+[node name="嘟嘟嘟" type="Button" parent="."]
+offset_left = 1176.0
+offset_top = 553.0
+offset_right = 1368.0
+offset_bottom = 678.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_v37kh")
+theme_override_font_sizes/font_size = 96
+text = "嘟嘟嘟"
+flat = true
+
+[node name="道理" type="Button" parent="."]
+offset_left = 1186.0
+offset_top = 735.0
+offset_right = 1386.0
+offset_bottom = 868.0
 theme_override_fonts/font = ExtResource("2_v37kh")
 theme_override_font_sizes/font_size = 96
 text = "道理"
+flat = true
 
-[node name="设置" type="Label" parent="."]
-offset_left = 1173.0
-offset_top = 712.0
-offset_right = 1365.0
-offset_bottom = 837.0
+[node name="设置" type="Button" parent="."]
+offset_left = 1187.0
+offset_top = 850.0
+offset_right = 1387.0
+offset_bottom = 983.0
 theme_override_fonts/font = ExtResource("2_v37kh")
 theme_override_font_sizes/font_size = 96
 text = "设置"
+flat = true
+
+[node name="credits" type="Node2D" parent="."]
+
+[node name="借物" type="RichTextLabel" parent="credits"]
+offset_left = 202.0
+offset_top = -510.0
+offset_right = 1714.0
+offset_bottom = -28.0
+theme_override_fonts/normal_font = ExtResource("2_v37kh")
+theme_override_font_sizes/normal_font_size = 48
+text = "模型借物
+- OTTO 电棍 说的道理 | sjzh画
+- 古神哈姆 | Arthurkz
+- 【模型配布】白衣大莱·拉斯特炫·狗 | Yora
+
+活字印刷
+- 拼音规则 https://github.com/guoyunhe/pinyin-json
+
+BGM
+- （完）电棍：♿波西唢呐狂想曲♿[补档] https://www.bilibili.com/video/BV1Ze4y1c7AH
+
+字体授权
+- 汉仪元隆黑75W | 汉仪字库
+
+素材提供
+众吉吉国民"
 
 [connection signal="pressed" from="main/冲刺/冲刺Button" to="main" method="_on_冲刺_pressed"]
 [connection signal="pressed" from="main/冲刺/冲刺Button" to="main/冲刺" method="_on_button_pressed"]
+[connection signal="pressed" from="main/联机/联机Button" to="main" method="_on_冲刺_pressed"]
+[connection signal="pressed" from="main/联机/联机Button" to="main/联机" method="_on_button_pressed"]
+[connection signal="pressed" from="嘟嘟嘟" to="main" method="_on_嘟嘟嘟_pressed"]

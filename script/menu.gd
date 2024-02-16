@@ -25,3 +25,7 @@ func _on_冲刺_pressed():
 	await sound[2].finished
 	get_tree().change_scene_to_file("res://daoliShoot.tscn")
 
+
+
+func _on_嘟嘟嘟_pressed():
+	get_tree().change_scene_to_file("res://dududu.tscn")

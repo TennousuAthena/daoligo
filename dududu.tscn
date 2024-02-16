@@ -1,0 +1,129 @@
+[gd_scene load_steps=10 format=3 uid="uid://hlspmt3w58h6"]
+
+[ext_resource type="Script" path="res://script/OttoTTS.gd" id="1_m8vcx"]
+[ext_resource type="Texture2D" uid="uid://d1sa55rq18dfd" path="res://img/道理.png" id="2_j8npd"]
+[ext_resource type="FontFile" uid="uid://lgnbkdwffilh" path="res://assets/fonts/HYYuanLongHei75W.ttf" id="3_dqtqt"]
+[ext_resource type="Texture2D" uid="uid://boistomwq6kp5" path="res://img/炫狗.png" id="4_7c508"]
+
+[sub_resource type="GDScript" id="GDScript_ry5xf"]
+resource_name = "dududu_daoli"
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+
+
+func _physics_process(delta):
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
+
+	# Handle jump.
+	if Input.is_action_just_pressed(\"ui_up\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction = Input.get_axis(\"ui_left\", \"ui_right\")
+	if direction:
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	move_and_slide()
+
+func _on_button_pressed() -> void:
+	var Textbox = $\"contentInput\"
+	var text = Textbox.text if Textbox.text else Textbox.placeholder_text
+	var OttoScript = load(\"res://script/OttoTTS.gd\")
+	var Otto = OttoScript.new()
+	Otto.ottoTTS(text, get_tree().root)
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sunud"]
+size = Vector2(550, 204.286)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_myq1s"]
+size = Vector2(3872, 20)
+
+[sub_resource type="GDScript" id="GDScript_jtrhf"]
+resource_name = "xuangou"
+script/source = "extends CharacterBody2D
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://menu.tscn\")
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_86q5x"]
+radius = 96.148
+
+[node name="dududu" type="Node2D"]
+
+[node name="OttoTTS" type="AudioStreamPlayer2D" parent="."]
+script = ExtResource("1_m8vcx")
+
+[node name="Sddl" type="CharacterBody2D" parent="."]
+position = Vector2(349, -400)
+scale = Vector2(0.7, 0.7)
+script = SubResource("GDScript_ry5xf")
+
+[node name="Sddl" type="Sprite2D" parent="Sddl"]
+position = Vector2(11.4286, 122.857)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_j8npd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sddl"]
+position = Vector2(17.1429, 314.286)
+shape = SubResource("RectangleShape2D_sunud")
+
+[node name="Button" type="Button" parent="Sddl"]
+offset_left = 610.0
+offset_top = -11.4285
+offset_right = 1698.0
+offset_bottom = 163.571
+theme_override_fonts/font = ExtResource("3_dqtqt")
+theme_override_font_sizes/font_size = 128
+text = "嘟嘟嘟"
+flat = true
+
+[node name="contentInput" type="TextEdit" parent="Sddl"]
+offset_left = 602.857
+offset_top = -742.857
+offset_right = 1726.86
+offset_bottom = -266.857
+theme_override_fonts/font = ExtResource("3_dqtqt")
+theme_override_font_sizes/font_size = 48
+placeholder_text = "在这里输入你要寄的文字
+也可以用拼音并用空格隔开"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1931, 1097)
+shape = SubResource("RectangleShape2D_myq1s")
+
+[node name="last炫" type="CharacterBody2D" parent="."]
+position = Vector2(1827, 75)
+scale = Vector2(0.75, 0.75)
+script = SubResource("GDScript_jtrhf")
+
+[node name="炫狗" type="Sprite2D" parent="last炫"]
+position = Vector2(-1.33325, 5.33337)
+texture = ExtResource("4_7c508")
+
+[node name="Button" type="Button" parent="last炫/炫狗"]
+offset_left = -93.0
+offset_top = -84.0
+offset_right = 91.0
+offset_bottom = 85.0
+flat = true
+
+[node name="CollisionShape炫狗" type="CollisionShape2D" parent="last炫"]
+shape = SubResource("CircleShape2D_86q5x")
+
+[connection signal="pressed" from="Sddl/Button" to="Sddl" method="_on_button_pressed"]
+[connection signal="pressed" from="last炫/炫狗/Button" to="last炫" method="_on_button_pressed"]

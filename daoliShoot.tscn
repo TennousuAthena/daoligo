@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://b26ga73dsbhkh"]
 
-[ext_resource type="Script" path="res://daoli.gd" id="1_jnf65"]
+[ext_resource type="Script" path="res://script/daoli.gd" id="1_jnf65"]
 [ext_resource type="Texture2D" uid="uid://boistomwq6kp5" path="res://img/炫狗.png" id="1_v1ru0"]
 [ext_resource type="Texture2D" uid="uid://d1sa55rq18dfd" path="res://img/道理.png" id="1_v8hxd"]
 
