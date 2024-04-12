@@ -1,0 +1,212 @@
+[gd_scene load_steps=44 format=3 uid="uid://dneivf3apaaah"]
+
+[ext_resource type="Texture2D" uid="uid://dbuhctwkw7mrj" path="res://assets/video/叮咚鸡loop/frame#0001.jpg" id="1_1hinu"]
+[ext_resource type="Script" path="res://script/daoliRun.gd" id="1_cmvwc"]
+[ext_resource type="Shader" path="res://gb.gdshader" id="1_sb1q8"]
+[ext_resource type="Texture2D" uid="uid://beguasms4gtai" path="res://assets/video/叮咚鸡loop/frame#0002.jpg" id="2_7s7af"]
+[ext_resource type="Texture2D" uid="uid://btkfnu1hsdgeh" path="res://assets/video/叮咚鸡loop/frame#0003.jpg" id="3_1l465"]
+[ext_resource type="Texture2D" uid="uid://bmspu08beg0by" path="res://assets/video/叮咚鸡loop/frame#0004.jpg" id="4_b83mx"]
+[ext_resource type="Texture2D" uid="uid://3m3hlbtrqs4u" path="res://assets/video/叮咚鸡loop/frame#0005.jpg" id="5_cq5n6"]
+[ext_resource type="Texture2D" uid="uid://cyfpvvflxvnhr" path="res://assets/video/叮咚鸡loop/frame#0006.jpg" id="6_f2p1y"]
+[ext_resource type="Texture2D" uid="uid://caipjahk12oln" path="res://assets/video/叮咚鸡loop/frame#0007.jpg" id="7_yjmnd"]
+[ext_resource type="Texture2D" uid="uid://b3gosvdnpt4p4" path="res://assets/video/叮咚鸡loop/frame#0008.jpg" id="8_nqfiv"]
+[ext_resource type="Texture2D" uid="uid://cflfkdjcs8kik" path="res://assets/video/叮咚鸡loop/frame#0009.jpg" id="9_amc3v"]
+[ext_resource type="Texture2D" uid="uid://iecls4ef4eak" path="res://assets/video/叮咚鸡loop/frame#0010.jpg" id="10_gogdi"]
+[ext_resource type="Texture2D" uid="uid://c7nypts7m5ajb" path="res://assets/video/叮咚鸡loop/frame#0011.jpg" id="11_6nkke"]
+[ext_resource type="Texture2D" uid="uid://cmk8bxaa068ka" path="res://assets/video/叮咚鸡loop/frame#0012.jpg" id="12_oge0i"]
+[ext_resource type="Texture2D" uid="uid://ccv203je4dypo" path="res://assets/video/叮咚鸡loop/frame#0013.jpg" id="13_y8qlj"]
+[ext_resource type="Texture2D" uid="uid://bkepr2oa6j4ny" path="res://assets/video/叮咚鸡loop/frame#0014.jpg" id="14_vwihy"]
+[ext_resource type="Texture2D" uid="uid://bm4fbrdxyhoms" path="res://assets/video/叮咚鸡loop/frame#0015.jpg" id="15_x26hp"]
+[ext_resource type="Texture2D" uid="uid://8t2fvxa7ekjl" path="res://assets/video/叮咚鸡loop/frame#0016.jpg" id="16_gvwmu"]
+[ext_resource type="Texture2D" uid="uid://cjcbppr84v2g1" path="res://assets/video/叮咚鸡loop/frame#0017.jpg" id="17_cuwi8"]
+[ext_resource type="Texture2D" uid="uid://cug38mntylrg1" path="res://assets/video/叮咚鸡loop/frame#0018.jpg" id="18_cpkj7"]
+[ext_resource type="Texture2D" uid="uid://g1ff4xu7bm6j" path="res://assets/video/叮咚鸡loop/frame#0019.jpg" id="19_s6wia"]
+[ext_resource type="Texture2D" uid="uid://cpi7sqk7nog6c" path="res://assets/video/叮咚鸡loop/frame#0020.jpg" id="20_2qogp"]
+[ext_resource type="Texture2D" uid="uid://cxhmcxtf0rmfa" path="res://assets/video/叮咚鸡loop/frame#0021.jpg" id="21_j6de5"]
+[ext_resource type="Texture2D" uid="uid://h82a6a4447ge" path="res://assets/video/叮咚鸡loop/frame#0022.jpg" id="22_vo11j"]
+[ext_resource type="Texture2D" uid="uid://bwhd5mfswdeke" path="res://assets/video/叮咚鸡loop/frame#0023.jpg" id="23_61vq3"]
+[ext_resource type="Texture2D" uid="uid://3sswlqfdt2gh" path="res://assets/video/叮咚鸡loop/frame#0024.jpg" id="24_auv7x"]
+[ext_resource type="Texture2D" uid="uid://dmadllqmw45g2" path="res://assets/video/叮咚鸡loop/frame#0025.jpg" id="25_srab2"]
+[ext_resource type="Texture2D" uid="uid://dv0w2pnbc0do2" path="res://assets/video/叮咚鸡loop/frame#0026.jpg" id="26_uh3q6"]
+[ext_resource type="Texture2D" uid="uid://dfbnamvk7q1tl" path="res://assets/video/叮咚鸡loop/frame#0027.jpg" id="27_sbyw6"]
+[ext_resource type="Texture2D" uid="uid://codjpdom6ps50" path="res://assets/video/叮咚鸡loop/frame#0028.jpg" id="28_if2r8"]
+[ext_resource type="Texture2D" uid="uid://d0fioo6roh0h3" path="res://assets/video/叮咚鸡loop/frame#0029.jpg" id="29_sv1gx"]
+[ext_resource type="Texture2D" uid="uid://b0d4y6gx538mj" path="res://assets/video/叮咚鸡loop/frame#0030.jpg" id="30_4y8b0"]
+[ext_resource type="Texture2D" uid="uid://cbaogq86cqh6h" path="res://assets/video/叮咚鸡loop/frame#0031.jpg" id="31_vla6i"]
+[ext_resource type="Texture2D" uid="uid://d2ijht08hlsuc" path="res://assets/video/叮咚鸡loop/frame#0032.jpg" id="32_yeawx"]
+[ext_resource type="Texture2D" uid="uid://b7gl24po34ys6" path="res://assets/UI/lens.png" id="34_8oprr"]
+[ext_resource type="Texture2D" uid="uid://ck7dgudpntsph" path="res://img/道理射击.png" id="35_pj5sl"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_v77kl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gdn5o"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_28vl1"]
+shader = ExtResource("1_sb1q8")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pdiug"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1hinu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7s7af")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1l465")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b83mx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cq5n6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f2p1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yjmnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_nqfiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_amc3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gogdi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6nkke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_oge0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_y8qlj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_vwihy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_x26hp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gvwmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_cuwi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_cpkj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_s6wia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2qogp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_j6de5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_vo11j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_61vq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_auv7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_srab2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_uh3q6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_sbyw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_if2r8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_sv1gx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4y8b0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_vla6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_yeawx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xm610"]
+radius = 109.0
+height = 398.38
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_is5q2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3l06q"]
+radius = 21.3776
+
+[node name="DaoliRun" type="Node2D"]
+script = ExtResource("1_cmvwc")
+
+[node name="Pivot" type="StaticBody2D" parent="."]
+position = Vector2(1009, 931)
+physics_material_override = SubResource("PhysicsMaterial_v77kl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pivot"]
+position = Vector2(0, 5)
+shape = SubResource("CircleShape2D_gdn5o")
+
+[node name="DingDongji" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="DingDongji"]
+material = SubResource("ShaderMaterial_28vl1")
+position = Vector2(948.75, 259.975)
+scale = Vector2(0.360417, 0.344398)
+sprite_frames = SubResource("SpriteFrames_pdiug")
+autoplay = "default"
+frame_progress = 0.823393
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DingDongji"]
+position = Vector2(922.5, 270)
+rotation = 0.13439
+shape = SubResource("CapsuleShape2D_xm610")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+position = Vector2(1005, 962)
+node_a = NodePath("../Pivot")
+node_b = NodePath("../SightRigidBody")
+softness = 0.8
+motor_target_velocity = 0.0174533
+
+[node name="SightRigidBody" type="RigidBody2D" parent="."]
+position = Vector2(409, 501)
+rotation = -1.0472
+physics_material_override = SubResource("PhysicsMaterial_is5q2")
+gravity_scale = -100.0
+can_sleep = false
+
+[node name="Sight" type="Sprite2D" parent="SightRigidBody"]
+position = Vector2(1.99994, 3.99994)
+scale = Vector2(0.72, 0.72)
+texture = ExtResource("34_8oprr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SightRigidBody"]
+position = Vector2(183.072, -920.914)
+shape = SubResource("CircleShape2D_3l06q")
+
+[node name="道理射击" type="Sprite2D" parent="."]
+position = Vector2(926, 908)
+scale = Vector2(0.539256, 0.539256)
+texture = ExtResource("35_pj5sl")

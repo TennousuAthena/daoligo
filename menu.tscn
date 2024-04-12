@@ -4,7 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://dcjspqlt6yv84" path="res://audio/longToken/冲刺.mp3" id="2_djlyi"]
 [ext_resource type="FontFile" uid="uid://lgnbkdwffilh" path="res://assets/fonts/HYYuanLongHei75W.ttf" id="2_v37kh"]
 [ext_resource type="AudioStream" uid="uid://kj43tpabenvh" path="res://audio/music/Ccvbn -（完）电棍：波西唢呐狂想曲.mp3" id="3_kq8rf"]
-[ext_resource type="AudioStream" uid="uid://c7slekh4odax4" path="res://audio/longToken/冲.mp3" id="5_50qbx"]
+[ext_resource type="AudioStream" uid="uid://b2q1anxgaq1v2" path="res://audio/longToken/冲.mp3" id="5_50qbx"]
 [ext_resource type="AudioStream" uid="uid://cofofdpset4to" path="res://audio/longToken/哇袄.mp3" id="5_enysm"]
 [ext_resource type="Texture2D" uid="uid://d1sa55rq18dfd" path="res://img/道理.png" id="5_k1fwd"]
 [ext_resource type="Texture2D" uid="uid://b4bdi6pa1tmto" path="res://img/哇袄.png" id="7_xpj58"]
@@ -81,6 +81,15 @@ texture = ExtResource("7_xpj58")
 position = Vector2(349, 751)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("5_k1fwd")
+
+[node name="说的版本" type="Label" parent="main"]
+offset_left = 1731.0
+offset_top = 1041.0
+offset_right = 1913.0
+offset_bottom = 1073.0
+theme_override_fonts/font = ExtResource("2_v37kh")
+theme_override_font_sizes/font_size = 24
+text = "说的版本 v0.0.0"
 
 [node name="BGM" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_kq8rf")
